@@ -10,14 +10,6 @@ async function main() {
 
   console.log("owner address: ${owner.address}");
 
-  await token.safeMint(owner.address, {
-    value: ethers.utils.parseEther("0.001"),
-  });
-
-  await token.safeMint(owner.address, {
-    value: ethers.utils.parseEther("0.001"),
-  });
-
   console.log("deployed token address: ${token.address}");
 
   const WAIT_BLOCK_CONFIRMATIONS = 6;
