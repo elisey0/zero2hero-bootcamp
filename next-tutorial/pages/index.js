@@ -7,6 +7,8 @@ import Cards from "@/components/Cards";
 import Clicker from "@/components/Clicker";
 import StateArray from "@/components/StateArray";
 import StateWithInput from "@/components/StateWithInput";
+import DependentEffect from "@/components/DependentEffect";
+
 import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +27,7 @@ export default function Home() {
           <p>React tutorial</p>
         </div>
         <LoadDataFromBlockchain />
+        <DependentEffect />
         <StateWithInput />
         <StateArray />
         <Clicker />
